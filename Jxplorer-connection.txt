@@ -1,0 +1,12 @@
+#Generated Property List /home/andreas/.jxplorer/connections.txt
+
+#Tue Jan 23 12:20:34 CET 2024
+mangoflame-template.1=localhost
+mangoflame-template.11=
+mangoflame-template.3=1389
+mangoflame-template.5=LDAP v3
+mangoflame-template.7.1=dc\=mangoflame,dc\=com
+mangoflame-template.8.1=User + Password
+mangoflame-template.8.3=cn\=ldap_admin,dc\=mangoflame,dc\=com
+number_of_templates=1
+template_name0=mangoflame-template
