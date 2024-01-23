@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  openldap:
+    image: bitnami/openldap:latest
+    container_name: mangoflame
+    hostname: mangoflame
+    networks:
+      - bridge
+    environment:
+      - LDAP_ROOT=dc=mangoflame,dc=com
+      - LDAP_ADMIN_USERNAME=ldap_admin
+      - LDAP_ADMIN_PASSWORD=Linux4Ever
+      - LDAP_ADMIN_DN=cn=ldap_admin,ou=users,dc=mangoflame,dc=com
+      - LDAP_USERS=testuser
+      - LDAP_PASSWORDS=Linux4Ever
+      - LDAP_ALLOW_ANON_BINDING=no
+      - LDAP_USER_DC=users
+      - LDAP_GROUP_DC=groups
+    volumes:
+      - openldap5:/bitnami/openldap
+    ports:
+      - "1389:1389"
+      - "1636:1636"
+
+volumes:
+  openldap5:
