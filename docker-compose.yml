@@ -6,7 +6,7 @@ services:
     container_name: mangoflame
     hostname: mangoflame
     networks:
-      - bridge
+      - default
     environment:
       - LDAP_ROOT=dc=mangoflame,dc=com
       - LDAP_ADMIN_USERNAME=ldap_admin
