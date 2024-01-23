@@ -30,3 +30,5 @@ curl https://raw.githubusercontent.com/A-brandting/openldap/main/docker-compose.
 cd /home/openldap
 docker-compose up -d
 
+curl https://raw.githubusercontent.com/A-brandting/openldap/main/Jxplorer-connection.txt > /home/{$USER/.jxplorer/connections.txt}
+
